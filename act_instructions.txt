@@ -1,0 +1,89 @@
+Google browser
+Https://marmelab.com/react-admin-demo
+
+TASK 1: ADD FIRST 5 USERS
+Get users data from API:
+https://jsonplaceholder.typicode.com/users⁠�
+Add the first 5 users as customers in the system
+For each added user:
+Verify name is correct
+Verify email is correct
+Verify other details match the API data
+Check if the 5 newly added customers appear in the table
+
+TASK 2: UPDATE EXISTING CUSTOMERS
+Take the last 5 users from your API data (users 6–10)
+Update rows 6–10 in the table with this data
+Replace all information with the new users' data
+For each updated user:
+Verify name is correct
+Verify email is correct
+Verify other details match the API data
+Check if the 5 newly added customers appear in the table
+
+TASK 3: LOG TABLE DATA
+In the table on the first page only
+For each row in the table, print the data in this format:
+For News: Display as Yes/No
+For Segments: Should be separated by comma (,)
+Do not display table headers if empty (Latest purchase, Segments)
+Example:
+
+====== User 1 ======
+
+Name: Jerel Ferry
+Last seen: 3/9/2026
+Orders: 2
+Total spent: $117.89
+Latest purchase: 3/5/2026, 2:31:01 AM
+News: No
+Segments: Returns, Reviewer
+
+====== User 2 ======
+
+[Same format for next user]
+
+TASK 4: ANALYZE USER SPENDING
+1. Display Users with Spending
+Check all users' total spent amount
+For users with total spent > 0, display:
+Copy code
+
+1. John Doe: $500
+2. Jane Smith: $750
+3. Bob Johnson: $1200
+Continue for all users with spending.
+2. Calculate Total Spending
+Sum up all users' total spent amounts
+Display the sum:
+Copy code
+
+============================
+Total Customer Spending: $3,750
+============================
+3. Validate Total Spending
+
+If total spending < $3,500:
+
+Display: "FAIL: Total spending ($3,450) is below minimum threshold ($3,500)"
+Fail test execution
+
+Else:
+
+Display: "PASS: Total spending ($3,750) meets minimum threshold ($3,500)"
+Continue test execution
+
+Example Output
+
+1. John Doe: $500
+2. Jane Smith: $750
+3. Bob Johnson: $1,200
+4. Alice Brown: $800
+5. Tom Wilson: $500
+Copy code
+
+============================
+Total Customer Spending: $3,750
+===========================
+
+PASS: Total spending ($3,750) meets minimum threshold ($3,500)
